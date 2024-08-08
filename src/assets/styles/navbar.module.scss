@@ -1,0 +1,83 @@
+/* Utils */
+.df-c-4 {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+/* NavBar Styles */
+.navbar {
+    width: 100vw;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+}
+
+.navbar__logo svg {
+    height: 2.5rem;
+}
+
+.navbar__list {
+    display: flex;
+    margin-left: 2.5rem;
+}
+
+.navbar__item {
+    margin-right: 1.5rem;
+    border-bottom: 1px solid transparent;
+    margin-block: auto;
+
+    a {
+        @extend .df-c-4;
+    }
+
+    &:hover {
+        border-bottom: 1px solid #000;
+    }
+}
+
+.navbar_buttons {
+    margin-left: auto;
+
+    > * {
+        margin-left: .5rem;
+    }
+}
+
+.navbar__button {
+    @extend .df-c-4;
+    padding: 1em;
+    font-weight: 600;
+    border-radius: .5rem;
+    border: 0;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    
+    
+    /*i {
+        display: none;
+        margin-right: .4rem;
+    }*/
+
+    &:hover {
+        border-radius: 0;
+
+        i {
+            display: inline;
+        }
+    }
+
+
+    &:last-child {
+        background-color: black;
+        color: rgba(248, 245, 245, 0.95);
+    }
+}
+
+.dropdown {
+    background-color: #000;
+    width: 100vw;
+    height: 100px;
+}
